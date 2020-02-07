@@ -1,7 +1,13 @@
 package com.liza;
 
-public interface Card {
-    void increaseBalance(double moneyCount);
+public class Card {
+    public double activeBalance;
 
-    void decreaseBalance(double moneyCount);
+    public void increaseBalance(double moneyCount) {
+        activeBalance += moneyCount;
+    }
+
+    public void decreaseBalance(double moneyCount) {
+        activeBalance -= moneyCount;
+    }
 }
